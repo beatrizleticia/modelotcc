@@ -1,0 +1,43 @@
+ion-slides {
+  height: 100%;
+  --bullet-background-active: #337744;
+  --bullet-background:  #4aac63;
+}
+
+.slide1{
+  width: 280px;
+  height: 390px;
+}
+
+
+.entrar{
+  color:#337744;
+  margin-left: 250px;
+}
+
+.titulo{
+  font-weight: bolder;
+  color: #2e2e2e;
+}
+
+.subtitulo{
+  font-size: small;
+  color:  #4aac63;
+}
+
+.criar{
+  --background: linear-gradient(to bottom, #4aac63, #2e2e2e);
+}
+
+.icoface{
+  margin-right: 10px;
+}
+
+.face{
+  --background: lightgrey;
+  color: #337744;
+}
+
+.corstar{
+  color:#337744;
+}

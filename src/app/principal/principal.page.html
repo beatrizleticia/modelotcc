@@ -1,0 +1,194 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-searchbar class="busca" placeholder="Encontre seu produto"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- INÍCIO CARROSSEL -->
+  <ion-slides [options]="sliderConfig">
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-badge [routerLink]="['/frutas']">
+              <img src="assets/frutas.png">
+            </ion-badge>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-label>Fruta</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col [routerLink]="['/legumes']">
+            <ion-badge>
+              <img src="assets/legumes.png">
+            </ion-badge>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-label>Legume</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col [routerLink]="['/verduras']">
+            <ion-badge>
+              <img src="assets/verduras.png">
+            </ion-badge>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-label>Verdura</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-badge>
+              <img src="assets/temperos.png">
+            </ion-badge>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-label>Tempero</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-badge>
+              <img src="assets/graos.png">
+            </ion-badge>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-label>Grão</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+  <!-- FIM CARROSSEL -->
+  <!-- INÍCIO PRODUTOS -->
+  <ion-card [routerLink]="['/detalhesmamao']">
+    <img src="assets/morango.jpg">
+    <ion-card-header>
+      <ion-card-title>
+        Morango
+      </ion-card-title>
+      <ion-card-subtitle>
+        <ion-icon class="corstar"name="star" color="danger"></ion-icon>
+        <span class="pontos">4.9</span> (124 indicações) Morango - R$5,89 Bnd
+      </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <img src="assets/almeirao.jpg">
+    <ion-card-header>
+      <ion-card-title>
+        Almeirão
+      </ion-card-title>
+      <ion-card-subtitle>
+        <ion-icon name="star" color="danger"></ion-icon>
+        <span class="pontos">4.0</span> (60 indicações) Almeirão - R$3,19 Maço
+      </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <img src="assets/alho.jpg">
+    <ion-card-header>
+      <ion-card-title>
+        Alho
+      </ion-card-title>
+      <ion-card-subtitle>
+        <ion-icon name="star" color="danger"></ion-icon>
+        <span class="pontos">5</span> (168 indicações) Alho - R$21,00 Kg
+      </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <!-- FIM PRODUTOS -->
+  <!-- INÍCIO CARROSSEL PRODUTOS POPULARES -->
+  <ion-label class="populares">Mais Vendidos</ion-label>
+  <ion-slides [options]="sliderConfig2">
+    <ion-slide>
+      <ion-card>
+        <img src="assets/banana.jpg">
+        <ion-card-header>
+          <ion-card-title>
+            Banana
+          </ion-card-title>
+          <ion-card-subtitle>
+            Banana Madura - R$4,49 Kg
+            <ion-icon name="star" color="danger"></ion-icon>
+            <span class="pontos">4.5</span>
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="assets/batatainglesa.jpg">
+        <ion-card-header>
+          <ion-card-title>
+            Batata
+          </ion-card-title>
+          <ion-card-subtitle>
+            Batata Inglesa - R$4,69 Kg
+            <ion-icon name="star" color="danger"></ion-icon>
+            <span class="pontos">5</span>
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="assets/alface.jpg">
+        <ion-card-header>
+          <ion-card-title>
+            Alaface
+          </ion-card-title>
+          <ion-card-subtitle>
+            Alface Fresca - R$2,79 Maço
+            <ion-icon name="star" color="danger"></ion-icon>
+            <span class="pontos">5</span>
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="assets/vagem.jpg">
+        <ion-card-header>
+          <ion-card-title>
+            Vagem
+          </ion-card-title>
+          <ion-card-subtitle>
+            Vagem - R$7,50 Kg
+            <ion-icon name="star" color="danger"></ion-icon>
+            <span class="pontos">3.9</span>
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

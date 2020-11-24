@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-searchbar class="busca" placeholder="Encontre seu produto"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  <!-- FIM CARROSSEL -->
+  <!-- INÍCIO PRODUTOS -->
+  <ion-card>
+    <img src="assets/beterraba.jpg">
+    <ion-card-header>
+      <ion-card-title>
+        Beterraba
+      </ion-card-title>
+      <ion-card-subtitle>
+        <ion-icon class="corstar"name="star" color="danger"></ion-icon>
+        <span class="pontos">4.9</span> (124 indicações) Beterraba - R$3,99 
+      </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <img src="assets/cenoura.jpg">
+    <ion-card-header>
+      <ion-card-title>
+        Cenoura
+      </ion-card-title>
+      <ion-card-subtitle>
+        <ion-icon name="star" color="danger"></ion-icon>
+        <span class="pontos">4.0</span> (60 indicações) Cenoura - R$3,19 
+      </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <ion-card [routerLink]="['/detalhes1']">
+    <img src="assets/pepino.jpg">
+    <ion-card-header>
+      <ion-card-title>
+        Pepino
+      </ion-card-title>
+      <ion-card-subtitle>
+        <ion-icon name="star" color="danger"></ion-icon>
+        <span class="pontos">3.5</span> (168 indicações) Pepino - R$3,49 Kg
+      </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

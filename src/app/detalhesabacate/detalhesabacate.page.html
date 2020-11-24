@@ -1,0 +1,50 @@
+<ion-content>
+  <div class="cabecalho"></div>
+  <div class="ofertas">
+    <div class="titulo">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            <span>Ideal para sobremesas</span>
+            <ion-icon name="cart" color="danger" style="float: right;" [routerLink]="['/carrinhocompras']"></ion-icon><br>
+          </ion-card-title>
+          <ion-card-subtitle>
+            <ion-icon name="star" color="danger"></ion-icon>
+            <span class="pontos">4,9</span> (178 indicações) Abacate - R$13,00 Un<br>
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </div><br>
+    <!-- INÍCIO CARROSSEL POPULARES -->
+    <ion-label class="populares">Compre também</ion-label>
+    <ion-slides [options]="sliderConfig">
+      <ion-slide>
+        <ion-card style="box-shadow: none !important">
+          <img src="assets/manga.jpg">
+          <ion-card-content>
+            <ion-label class="titulop">Manga</ion-label><br>
+            <ion-label class="subtitulop">R$ 5,99</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card style="box-shadow: none !important">
+          <img src="assets/acerola.jpg">
+          <ion-card-content>
+            <ion-label class="titulop">Acerola</ion-label><br>
+            <ion-label class="subtitulop">R$ 8,99</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card style="box-shadow: none !important">
+          <img src="assets/laranja.jpg">
+          <ion-card-content>
+            <ion-label class="titulop">Laranja</ion-label><br>
+            <ion-label class="subtitulop">R$ 5,69</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

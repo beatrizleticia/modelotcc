@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Meu carrinho</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <div *ngFor="let produto of bd.produtos">
+      <div *ngFor="let item of bd.produtos">
+        <ion-item *ngIf="produto.codigo === item">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-avatar>
+                  <img src={{produto.imagem}}>
+                </ion-avatar>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-label>{{produto.nome}}</ion-label>
+                <ion-label>R$ {{produto.preco}}</ion-label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-label>quantidade</ion-label>
+                <ion-item>
+                  <div (click)="maisItem(produto.cogido)">
+                    <ion-icon name="add-circle"></ion-icon>
+                  </div>
+                  <ino-label>{{produto.quantidade}}</ino-label>
+                  <div (click)="menosItem(produto.cogido)">
+                    <ion-icon name="remove-circle"></ion-icon>
+                  </div>
+                  <ion-chip (click)="deletar(produto.codigo)">
+                    <ion-icon name="trash" color="danger"></ion-icon>
+                  </ion-chip>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-label>R$ {{produto.subtotal}}</ion-label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+      </div>
+    </div>
+  </ion-list>
+  <ion-label color="danger">TOTAL: R$ {{total}}</ion-label>
+  <ion-button [routerLink]="['/frutas']" color="light">Produtos</ion-button>
+  <ion-label>{{teste}}</ion-label>
+</ion-content>
