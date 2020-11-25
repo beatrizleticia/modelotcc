@@ -47,7 +47,20 @@
       </ion-slide>
     </ion-slides>
   </div>
-</ion-content>-->
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <ion-header>
   <ion-toolbar>
@@ -83,4 +96,44 @@
       <icon-badge>{{bd.carrinho.length}}</icon-badge>
     </ion-fab-button>
   </ion-fab>
+</ion-content>-->
+
+
+
+
+
+
+
+<ion-content>
+  <div class="cabecalho"><img src="{{ produto.imagem }}"></div>
+  <div class="ofertas">
+    <div class="titulo">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            <span class="titulo1"> {{produto.nome}} </span>
+          <ion-button class="criar1" shape="round" (click)="bd.incluir(produto.codigo)">Adicionar<ion-icon name="cart" class="margem"></ion-icon></ion-button>
+          </ion-card-title>
+          <ion-card-subtitle>
+            <ion-icon name="cash-outline" size="small"></ion-icon>
+            <ion-label class="preco"> {{produto.preco}} </ion-label>
+          </ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </div>
+    <ion-row>
+      <ion-col>
+        <ion-button class="criar" shape="round" expand="block" [routerLink]="['/frutas']">Continue comprando</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button class="face" shape="round" expand="block" [routerLink]="['/carrinhocompras']" >
+          <icon-badge>{{bd.carrinho.length}}</icon-badge>
+          <ion-icon class="icoface" name="cart"></ion-icon>
+          Ir para o carrinho
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
 </ion-content>

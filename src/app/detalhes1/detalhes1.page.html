@@ -5,46 +5,22 @@
       <ion-card>
         <ion-card-header>
           <ion-card-title>
-            <span>Ideal para saladas</span>
-            <ion-icon name="cart" color="danger" style="float: right;" [routerLink]="['/carrinhocompras']"></ion-icon><br>
+            <span> {{produto.nome}} </span>
+          <ion-icon name="cart" color="danger" style="float: right;" (click)="bd.incluir(produto.codigo)"></ion-icon><br>
           </ion-card-title>
           <ion-card-subtitle>
             <ion-icon name="star" color="danger" ></ion-icon>
-            <span class="pontos">4,2</span> (112 indicações) Pepino - R$3,59<br>
+            <span class="pontos">4,2</span>R$ {{produto.preco}}<br>
+            <ion-button [routerLink]="['/frutas']">Voltar</ion-button>
+  <ion-fab>
+    <ion-fab-button [routerLink]="['/carrinhocompras']">
+      <ion-icon name="cart"></ion-icon>
+      <icon-badge>{{bd.carrinho.length}}</icon-badge>
+    </ion-fab-button>
+  </ion-fab>
           </ion-card-subtitle>
         </ion-card-header>
       </ion-card>
     </div><br>
-    <!-- INÍCIO CARROSSEL POPULARES -->
-    <ion-label class="populares">Compre também</ion-label>
-    <ion-slides [options]="sliderConfig">
-      <ion-slide>
-        <ion-card style="box-shadow: none !important">
-          <img src="assets/manga.jpg">
-          <ion-card-content>
-            <ion-label class="titulop">Manga</ion-label><br>
-            <ion-label class="subtitulop">R$ 5,99</ion-label>
-          </ion-card-content>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card style="box-shadow: none !important">
-          <img src="assets/acerola.jpg">
-          <ion-card-content>
-            <ion-label class="titulop">Acerola</ion-label><br>
-            <ion-label class="subtitulop">R$ 8,99</ion-label>
-          </ion-card-content>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card style="box-shadow: none !important">
-          <img src="assets/laranja.jpg">
-          <ion-card-content>
-            <ion-label class="titulop">Laranja</ion-label><br>
-            <ion-label class="subtitulop">R$ 5,69</ion-label>
-          </ion-card-content>
-        </ion-card>
-      </ion-slide>
-    </ion-slides>
   </div>
 </ion-content>
