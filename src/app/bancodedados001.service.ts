@@ -11,105 +11,105 @@ export class Bancodedados001Service {
       nome: 'Morango',
       imagem: 'assets/morango.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 5.77,
       subtotal: 0
     },    {
       codigo: 2,
       nome: 'Abacaxi',
       imagem: 'assets/abacaxi.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 6.99,
       subtotal: 0
     },    {
       codigo: 3,
       nome: 'Manga',
       imagem: 'assets/manga.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 6.50,
       subtotal: 0
     },    {
       codigo: 4,
       nome: 'Mamão',
       imagem: 'assets/mamao.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 5.53,
       subtotal: 0
     },    {
       codigo: 5,
       nome: 'Abacate',
       imagem: 'assets/abacate.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 8.99,
       subtotal: 0
     },   {
       codigo: 6,
       nome: 'Banana',
       imagem: 'assets/banana.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 3.49,
       subtotal: 0
     },   {
       codigo: 7,
       nome: 'Acerola',
       imagem: 'assets/acerola.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 9.90,
       subtotal: 0
     },   {
       codigo: 8,
       nome: 'Ameixa',
       imagem: 'assets/ameixa.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 8.00,
       subtotal: 0
     },   {
       codigo: 9,
       nome: 'Goiaba',
       imagem: 'assets/goiaba.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 8.99,
       subtotal: 0
     },   {
       codigo: 10,
       nome: 'Kiwi',
       imagem: 'assets/kiwi.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 22.90,
       subtotal: 0
     },   {
       codigo: 11,
       nome: 'Laranja',
       imagem: 'assets/laranja.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 3.99,
       subtotal: 0
     },   {
       codigo: 12,
       nome: 'Limão',
       imagem: 'assets/limao.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 3.49,
       subtotal: 0
     },   {
       codigo: 13,
       nome: 'Melão',
       imagem: 'assets/melao.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 4.99,
       subtotal: 0
     },   {
       codigo: 14,
       nome: 'Pera',
       imagem: 'assets/pera.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 14.99,
       subtotal: 0
     },   {
       codigo: 15,
       nome: 'Pessego',
       imagem: 'assets/pessego.jpg',
       quantidade: 0,
-      preco: 5.49,
+      preco: 14.00,
       subtotal: 0
     }
   ];
@@ -129,6 +129,7 @@ export class Bancodedados001Service {
     }
     if (existe === false) {
       this.carrinho.push(cod);
+      alert('Produto adicionado com sucesso!');
     }
   }
 
