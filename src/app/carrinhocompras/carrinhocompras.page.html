@@ -7,7 +7,7 @@
 <ion-content>
   <ion-list>
     <div *ngFor="let produto of bd.produtos">
-      <div *ngFor="let item of bd.produtos">
+      <div *ngFor="let item of bd.carrinho">
         <ion-item *ngIf="produto.codigo === item">
           <ion-grid>
             <ion-row>
@@ -27,12 +27,12 @@
               <ion-col>
                 <ion-label>Quantidade</ion-label>
                 <ion-item>
-                  <div (click)="maisItem(produto.cogido)">
-                    <ion-icon name="add-circle"></ion-icon>
+                  <div><button (click)="maisProd(produto.codigo)">
+                    <ion-icon name="add-circle"></ion-icon></button>
                   </div>
-                  <ino-label>{{produto.quantidade}}</ino-label>
-                  <div (click)="menosItem(produto.cogido)">
-                    <ion-icon name="remove-circle"></ion-icon>
+                  <ion-label>{{produto.quantidade}}</ion-label>
+                  <div><button (click)="menosProd(produto.codigo)">
+                    <ion-icon name="remove-circle" ></ion-icon></button>
                   </div>
                   <ion-chip (click)="deletar(produto.codigo)">
                     <ion-icon name="trash" color="danger"></ion-icon>
@@ -52,6 +52,5 @@
   </ion-list>
   <ion-label color="danger">TOTAL: R$ {{total}}</ion-label>
   <ion-button class="criar" shape="round" [routerLink]="['/frutas']">Produtos</ion-button>
-  <ion-label>{{teste}}</ion-label>
   <ion-button class="criar1" shape="round" expand="block" [routerLink]="['/detalhesverdura']">Finalizar compra</ion-button>
 </ion-content>
