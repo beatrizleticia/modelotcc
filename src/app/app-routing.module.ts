@@ -79,6 +79,18 @@ const routes: Routes = [
     path: 'carrinhocompras',
     loadChildren: () => import('./carrinhocompras/carrinhocompras.module').then( m => m.CarrinhocomprasPageModule)
   },
+  {
+    path: 'conta',
+    loadChildren: () => import('./conta/conta.module').then( m => m.ContaPageModule)
+  },
+  {
+    path: 'graos',
+    loadChildren: () => import('./graos/graos.module').then( m => m.GraosPageModule)
+  },
+  {
+    path: 'tempero',
+    loadChildren: () => import('./tempero/tempero.module').then( m => m.TemperoPageModule)
+  },
 ];
 
 @NgModule({

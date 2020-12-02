@@ -115,8 +115,7 @@
           <ion-button class="criar1" shape="round" (click)="bd.incluir(produto.codigo)">Adicionar<ion-icon name="cart" class="margem"></ion-icon></ion-button>
           </ion-card-title>
           <ion-card-subtitle>
-            <ion-icon name="cash-outline" size="small"></ion-icon>
-            <ion-label class="preco"> {{produto.preco}} </ion-label>
+            <ion-label class="preco">R$ {{produto.preco}} </ion-label>
           </ion-card-subtitle>
         </ion-card-header>
       </ion-card>
@@ -129,7 +128,7 @@
     <ion-row>
       <ion-col>
         <ion-button class="face" shape="round" expand="block" [routerLink]="['/carrinhocompras']" >
-          <icon-badge>{{bd.carrinho.length}}</icon-badge>
+          <ion-badge class="face">{{bd.carrinho.length}}</ion-badge>
           <ion-icon class="icoface" name="cart"></ion-icon>
           Ir para o carrinho
         </ion-button>

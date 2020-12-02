@@ -11,14 +11,14 @@ export class Bancodedados001Service {
       nome: 'Morango',
       imagem: 'assets/morango.jpg',
       quantidade: 0,
-      preco: 6,
+      preco: 6.99,
       subtotal: 0
     },    {
       codigo: 2,
       nome: 'Abacaxi',
       imagem: 'assets/abacaxi.jpg',
       quantidade: 0,
-      preco: 7,
+      preco: 7.29,
       subtotal: 0
     },    {
       codigo: 3,
@@ -129,7 +129,6 @@ export class Bancodedados001Service {
     }
     if (existe === false) {
       this.carrinho.push(cod);
-      alert('Produto adicionado com sucesso!');
     }
   }
 

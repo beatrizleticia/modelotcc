@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Bancodedados001Service } from './../bancodedados001.service'
 
 @Component({
-  selector: 'app-verduras',
-  templateUrl: './verduras.page.html',
-  styleUrls: ['./verduras.page.scss'],
+  selector: 'app-graos',
+  templateUrl: './graos.page.html',
+  styleUrls: ['./graos.page.scss'],
 })
-export class VerdurasPage{
+export class GraosPage {
 
   constructor(private bd : Bancodedados001Service) { }
 
-
 }
+

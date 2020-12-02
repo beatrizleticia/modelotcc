@@ -15,10 +15,6 @@ export class CarrinhocomprasPage implements OnInit {
 
   constructor(public bd:Bancodedados001Service) { }
  
-  ngOnInit(){
-
-  }
-
 
   public maisProd(p: number) {
     this.bd.produtos[p - 1].quantidade += 1;
@@ -44,4 +40,9 @@ export class CarrinhocomprasPage implements OnInit {
     this.bd.excluir(p);
     this.calculaTotal();
   }
+
+  ngOnInit(){
+
+  }
+
 }
