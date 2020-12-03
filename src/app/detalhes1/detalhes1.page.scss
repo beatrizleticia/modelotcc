@@ -1,79 +1,65 @@
-ion-content{
-    --color: white;
-}
-
-ion-content div:first-child{
-    position: relative;
-}
-
-ion-content div:last-child{
-    position: relative;
-    margin-top: -25px;
-}
-
-.cabecalho{
-    height: 515px;
-    background-image: url('../../assets/benfpepino.png');
-    background-size: cover;
-}
-
-.pontos{
-    color: red;
-    margin-left: 5px;
-}
-
-ion-card{
-    padding: 5px;
-    border-radius: 10px;
-}
-
-ion-card-title{
+.conteudo{
+    margin-top: 20%;
+  }
+  
+  .titulo{
     font-weight: bolder;
-}
-
-ion-card-subtitle{
-    font-size: small;
-}
-
-.ingredientes {
-    font-size: xx-small;
-}
-
-.populares{
-    font-size: x-large;
-    font-weight: bolder;
-    margin-left: 10px;
-    color:#337744;
-}
-
-.titulop{
-    font-size: small;
-    color: black;
-}
-
-.subtitulop{
-    font-size: small;
-    font-weight: bolder;
-    color: black;
-}
-
-.titulol{
-    font-size: x-large;
-    font-weight: bolder;
-    color: black;
+    font-size: xx-large;
+    padding: 25px;
+    color: #337744;
+  }
+  
+  .entrada{
+    --background: linear-gradient(to bottom , #9DC183 ,#4aac63,);
+    border-radius: 20px;
     margin-left: 25px;
-}
+    margin-right: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    --highlight-background:  #9DC183;
+  }
+  
+  .entrada.item-has-focus > ion-label {
+    color: #2e2e2e !important;
+  }
+  
+  .entradas{
+    margin-top: 35px;
+  }
+  
+  .criar{
+    --background: linear-gradient(to bottom, #4aac63, #2e2e2e);
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+  .aceite{
+    font-size: x-small;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .entrar{
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login{
+    margin-left: 10px;
+    color:  #337744;
+  }
 
-.lanche{
-    font-weight: bolder;
-}
+  
+.entrar1{
+    color:#337744;
+    margin-left: 190px;
+  }
 
-.preco{
-    font-weight: bolder;
-    text-align: right;
-}
-
-.popular{
-    font-size: small;
-    text-align: right;
-}
+  .entrar2{
+    color:#337744;
+    margin-left: 10px;
+  }

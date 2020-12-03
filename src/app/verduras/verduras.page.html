@@ -22,5 +22,18 @@
       </ion-grid>
     </ion-item>
   </ion-list>
+  <ion-row>
+    <ion-col>
   <ion-button class="criar" shape="round" expand="block" [routerLink]="['/tabs']">Voltar</ion-button><br>
+  </ion-col>
+ </ion-row>
+ <ion-row>
+  <ion-col>
+    <ion-button class="face" shape="round" expand="block" [routerLink]="['/carrinhocompras']" >
+      <ion-badge class="face">{{bd.carrinho.length}}</ion-badge>
+      <ion-icon class="icoface" name="cart"></ion-icon>
+      Ir para o carrinho
+    </ion-button>
+  </ion-col>
+</ion-row>
 </ion-content>
